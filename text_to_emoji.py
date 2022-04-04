@@ -24,7 +24,7 @@ class App(Tk):
         numberEmojis = [':zero: ', ':one: ', ':two: ', ':three: ', ':four: ', ':five: ', ':six: ', ':seven: ', ':eight: ', ':nine: ']
 
         #Converts user input to text
-        text_chars = list(self.string_value.get())
+        text_chars = list(self.string_value.get().lower())
 
         #Loops through each character and converts it to emoji format accordingly
         for i in range(len(text_chars)):
