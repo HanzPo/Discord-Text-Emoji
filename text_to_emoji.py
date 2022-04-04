@@ -1,10 +1,13 @@
 import pyperclip
 from tkinter import *
 from tkinter.ttk import *
+from ttkthemes import ThemedTk
 
-class App(Tk):
+class App(ThemedTk):
     def __init__(self):
         super().__init__()
+        super().set_theme('arc')
+
         self.title("Text to Discord Emoji Text Converter")
         self.resizable(width=False, height=False)
         self.string_value = StringVar()
