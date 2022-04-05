@@ -20,9 +20,9 @@ class App(ThemedTk):
     
     def make_widgets(self):
         padding = {'padx' : 2, 'pady' : 2}
-        self.text_entry = Entry(width=50, textvariable=self.string_value).grid(column=0, row=0, **padding)
+        self.text_entry = Entry(width=60, textvariable=self.string_value).grid(column=0, row=0, **padding)
         self.convert_button = Button(width=10, text="Convert", command=self.convert_text).grid(column=1, row=0, **padding)
-        self.result_entry = Entry(width=50, textvariable=self.result_value).grid(column=0, row=1, **padding)
+        self.result_entry = Entry(width=60, textvariable=self.result_value).grid(column=0, row=1, **padding)
         self.copy_button = Button(width=10, text="Copy", command=self.copy_text).grid(column=1, row=1, **padding)
 
     def convert_text(self):
